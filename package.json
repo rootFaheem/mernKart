@@ -4,8 +4,8 @@
   "description": "Basic MERN stack App with mLab DB",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "author": "faheem",
   "license": "ISC",
