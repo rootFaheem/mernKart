@@ -9,6 +9,7 @@ import {
   NavItem,
   NavLink
 } from "reactstrap";
+
 class AppNavbar extends Component {
   state = {
     isOpen: false
@@ -18,17 +19,18 @@ class AppNavbar extends Component {
       isOpen: !this.state.isOpen
     });
   };
+
   render() {
     return (
       <div>
-        <Navbar color="success" dark expand="sm" className="mb-5">
+        <Navbar expand="sm" color="success" dark className="mb-5">
           <Container>
             <NavbarBrand href="/"> mernKart</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink href="https://www.google.com" target="_blank">
+                  <NavLink href="#hideandseek" onClick={this.toggle}>
                     Google
                   </NavLink>
                 </NavItem>
@@ -36,6 +38,9 @@ class AppNavbar extends Component {
             </Collapse>
           </Container>
         </Navbar>
+        {/* <div id="hideandseek">
+          <h1>Hi google </h1>
+        </div> */}
       </div>
     );
   }
