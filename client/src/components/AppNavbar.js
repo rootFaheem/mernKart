@@ -38,9 +38,6 @@ class AppNavbar extends Component {
             </Collapse>
           </Container>
         </Navbar>
-        {/* <div id="hideandseek">
-          <h1>Hi google </h1>
-        </div> */}
       </div>
     );
   }

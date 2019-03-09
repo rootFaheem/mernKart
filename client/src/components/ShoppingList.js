@@ -6,13 +6,12 @@ import uuid from "uuid";
 class ShoppingList extends Component {
   state = {
     items: [
-      { id: uuid(), name: "Eggs" },
-      { id: uuid(), name: "Chicken" },
+      { id: uuid(), name: "eggs" },
+      { id: uuid(), name: "Bread" },
       { id: uuid(), name: "Milk" },
-      { id: uuid(), name: "Bread" }
+      { id: uuid(), name: "Water" }
     ]
   };
-
   render() {
     const { items } = this.state;
     return (
@@ -60,4 +59,5 @@ class ShoppingList extends Component {
     );
   }
 }
+
 export default ShoppingList;
